@@ -1,0 +1,51 @@
+.content-list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+.content-list > li {
+    background-size: cover;
+    position: relative;
+}
+
+.content-list > li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.list-coffee {
+    background-image: url(../imgs/coffee.png);
+}
+.list-baverage {
+    background-image: url(../imgs/baverage.png);
+    background-position-y: 30%;
+}
+.list-tea {
+    background-image: url(../imgs/tea.png);
+    background-position-y: 80%;
+}
+.list-ade {
+    background-image: url(../imgs/ade.png);
+    background-position-y: 30%;
+}
+.list-blended {
+    background-image: url(../imgs/blended.png);
+    background-position-y: 50%;
+}
+.list-cream {
+    background-image: url(../imgs/cream.png);
+    background-position-y: 30%;
+}
