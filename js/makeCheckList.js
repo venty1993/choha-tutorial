@@ -38,7 +38,7 @@ function makeCheckList(){
         '쇼케이스',
         '내부간판'
     ]
-    const checkList = location.pathname==="/html/chk-open.html"?open:close;
+    const checkList = location.pathname==="/choha-tutorial/html/chk-open.html"?open:close;
     const container = document.getElementById('checklist-container');
     for (const key in checkList){
         if (Object.hasOwnProperty.call(checkList, key)) {
