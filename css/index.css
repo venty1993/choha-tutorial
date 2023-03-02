@@ -27,25 +27,25 @@
 }
 
 .list-coffee {
-    background-image: url(../imgs/coffee.png);
+    background-image: url(../imgs/coffee_s.jpeg);
 }
 .list-baverage {
-    background-image: url(../imgs/baverage.png);
+    background-image: url(../imgs/baverage_s.jpeg);
     background-position-y: 30%;
 }
 .list-tea {
-    background-image: url(../imgs/tea.png);
+    background-image: url(../imgs/tea_s.jpeg);
     background-position-y: 80%;
 }
 .list-ade {
-    background-image: url(../imgs/ade.png);
+    background-image: url(../imgs/ade_s.jpeg);
     background-position-y: 30%;
 }
 .list-blended {
-    background-image: url(../imgs/blended.png);
+    background-image: url(../imgs/blended_s.jpeg);
     background-position-y: 50%;
 }
 .list-cream {
-    background-image: url(../imgs/cream.png);
+    background-image: url(../imgs/cream_s.jpeg);
     background-position-y: 30%;
 }
