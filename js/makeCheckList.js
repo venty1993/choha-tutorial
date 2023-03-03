@@ -23,7 +23,6 @@ function makeCheckList(){
         '물걸레 락스물로 교체',
         '야외 의자정리',
         '피아노정리',
-        '물걸레통 물 락스물로 교체해서 걸레 담가놓기',
         '스팀노즐 위치',
         '진동벨 충전',
         '에어컨 확인(홀, 거울방 불)',
@@ -38,7 +37,8 @@ function makeCheckList(){
         '모니터',
         '키오스크',
         '쇼케이스',
-        '내부간판'
+        '내부간판',
+        '그라인더 전원'
     ]
     const checkList = location.pathname==="/choha-tutorial/html/chk-open.html"?open:close;
     const container = document.getElementById('checklist-container');
