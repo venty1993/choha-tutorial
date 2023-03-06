@@ -2,7 +2,7 @@ makeCheckList();
 function makeCheckList(){
 
     const open = [
-        '바깥 의자'
+        '바깥 의자',
         '캠핑카 정리',
         '음악',
         '방 불 켜기',
