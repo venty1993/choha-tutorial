@@ -33,6 +33,7 @@ function makeCheckList(){
         '포터필터, 벨크리머 설거지',
         '셀프바 유리물병 설거지',
         '쇼케이스 아래 물버리기',
+        '굴뚝빵 반죽꺼내기',
         '커피머신 마감',
         '커피찌꺼기통 설거지',
         '행주, 린넨 빨기',
@@ -41,6 +42,7 @@ function makeCheckList(){
         '시재확인후 영업마감',
         '거울방 불',
         '문 잠그기',
+        '에어컨 확인(홀, 거울방, 창고)',
         '음악끄기',
         '키오스크',
         '화장실 불',
@@ -48,7 +50,7 @@ function makeCheckList(){
         '쇼케이스',
         '내부간판, 태블릿 끄기',
         '그라인더 전원',
-        '에어컨 확인(홀, 거울방 불)',
+        '서큘레이터 끄기',
         '진동벨 충전',
     ]
     const checkList = location.pathname==="/choha-tutorial/html/chk-open.html"?open:close;
