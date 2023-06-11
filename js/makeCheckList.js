@@ -17,10 +17,13 @@ function makeCheckList(){
     ]
     
     const close = [
-        ['9시전'],
+        ['굴뚝빵 완판시 바로 해도 되는것'],
         '굴뚝빵 목봉 닦기',
         '굴뚝빵 용품 설거지',
+        '굴뚝빵 오븐 밑판 설거지',
+        '굴뚝빵오븐 유리벽 닦기',
         '초코중탕기 정리',
+        ['9시전에 미리 할만한것'],
         '테이블 의자 위치 정리',
         '바닥 쓸기',
         '물걸레 락스물로 교체',
@@ -28,15 +31,12 @@ function makeCheckList(){
         '외부 쓰레기통 정리',
         '온실정리',
         '야외 의자정리',
-        '피아노정리',
-        '스팀노즐 위치',
         '블렌더 설거지',
         'BMP설거지(물들어있는 도구통)',
-        '에어프라이어 위 집기류 설거지',
-        '에어프라이어 내부 트레이 설거지',
         '포터필터, 벨크리머 설거지',
         '셀프바 유리물병 설거지',
         '쇼케이스 아래 물버리기',
+        ['9시이후에 해야할것'],
         '굴뚝빵 반죽꺼내기',
         '커피머신 마감',
         '커피찌꺼기통 설거지',
@@ -56,6 +56,8 @@ function makeCheckList(){
         '그라인더 전원',
         '서큘레이터 끄기',
         '진동벨 충전',
+        '스팀노즐 위치',
+        '피아노커버덮기',
     ]
 
     const checkList = location.pathname==="/choha-tutorial/html/chk-open.html"?open:close;
@@ -65,7 +67,7 @@ function makeCheckList(){
             const element = checkList[key];
             if(Array.isArray(checkList[key])){
                 makeHeader(checkList[key][0])
-                break;
+                continue;
             }
             makeList(key,element)
 
