@@ -66,8 +66,8 @@ function makeCheckList(){
         ]
     ]
 
-    // const checkList = location.pathname==="/choha-tutorial/html/chk-open.html"?open:close;
-    const checkList = close;
+    const checkList = location.pathname==="/choha-tutorial/html/chk-open.html"?open:close;
+    // const checkList = close;
     const container = document.getElementById('checklist-container');
     let index = 0;
     for (const key in checkList){
