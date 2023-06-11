@@ -17,6 +17,10 @@ function makeCheckList(){
     ]
     
     const close = [
+        ['9시전'],
+        '굴뚝빵 목봉 닦기',
+        '굴뚝빵 용품 설거지',
+        '초코중탕기 정리',
         '테이블 의자 위치 정리',
         '바닥 쓸기',
         '물걸레 락스물로 교체',
@@ -53,18 +57,34 @@ function makeCheckList(){
         '서큘레이터 끄기',
         '진동벨 충전',
     ]
+
     const checkList = location.pathname==="/choha-tutorial/html/chk-open.html"?open:close;
     const container = document.getElementById('checklist-container');
     for (const key in checkList){
         if (Object.hasOwnProperty.call(checkList, key)) {
             const element = checkList[key];
-
+            if(Array.isArray(checkList[key])){
+                makeHeader(checkList[key][0])
+                break;
+            }
             makeList(key,element)
 
             
         }
     }
-    
+
+    function makeHeader(text) {
+        const hrTag = document.createElement('hr');
+        const h2Tag = document.createElement('h2');
+        h2Tag.innerText = text;
+
+        content.appendChild(hrTag);
+        content.appendChild(h2Tag);
+
+
+    }
+
+
     function makeList(i,text) {  
         const content = document.createElement('div');
         content.classList.add('checklist-content');
