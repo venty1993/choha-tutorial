@@ -78,8 +78,8 @@ function makeCheckList(){
         const h2Tag = document.createElement('h2');
         h2Tag.innerText = text;
 
-        content.appendChild(hrTag);
-        content.appendChild(h2Tag);
+        container.appendChild(hrTag);
+        container.appendChild(h2Tag);
 
 
     }
