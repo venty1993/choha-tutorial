@@ -2,18 +2,21 @@ makeCheckList();
 function makeCheckList(){
 
     const open = [
-        '바깥 의자',
-        '캠핑카 정리',
-        '음악',
-        '방 불 켜기',
-        '에어컨(히터)켜기',
-        '모니터',
-        '쇼케이스',
-        '내부간판',
-        '키오스크',
-        '마감근무자가 청소한 집기들 제자리 찾기',
-        '물걸레 물 교체하고 바닥 닦기',
-        '셀프바 물통에 물 채우고 레몬약간'
+        [
+            ['오픈'],
+            '바깥 의자',
+            '캠핑카 정리',
+            '음악',
+            '방 불 켜기',
+            '에어컨(히터)켜기',
+            '모니터',
+            '쇼케이스',
+            '내부간판',
+            '키오스크',
+            '마감근무자가 청소한 집기들 제자리 찾기',
+            '물걸레 물 교체하고 바닥 닦기',
+            '셀프바 물통에 물 채우고 레몬약간'
+        ]
     ]
     
     const close = [
@@ -66,8 +69,8 @@ function makeCheckList(){
         ]
     ]
 
-    const checkList = location.pathname==="/choha-tutorial/html/chk-open.html"?open:close;
-    // const checkList = close;
+    // const checkList = location.pathname==="/choha-tutorial/html/chk-open.html"?open:close;
+    const checkList = open;
     const container = document.getElementById('checklist-container');
     let index = 0;
     for (const key in checkList){
