@@ -59,6 +59,7 @@ function makeCheckList(){
             '음악끄기',
             '키오스크',
             '화장실 불',
+            '초음파퇴치기 HIGH로 변경',
             '모니터',
             '쇼케이스',
             '내부간판, 태블릿 끄기',
@@ -141,3 +142,9 @@ function makeCheckList(){
     }
     
 }
+
+
+
+
+
+
